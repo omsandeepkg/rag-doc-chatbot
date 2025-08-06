@@ -1,5 +1,7 @@
 from langchain.document_loaders import PyMuPDFLoader
 from langchain.text_splitter import CharacterTextSplitter
+import tempfile
+import os
 
 def load_and_chunk(uploaded_file):
      # Save the uploaded file to a temporary file
